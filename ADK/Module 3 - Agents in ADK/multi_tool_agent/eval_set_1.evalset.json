@@ -1,0 +1,202 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "hello",
+      "conversation": [
+        {
+          "invocation_id": "e-a5eda98c-6a2d-4005-b696-9f4d463a8b4b",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hello"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello! I'm your Weather and Time assistant. I can help you check the current weather or local time for any city. How can I assist you today?",
+                "thought_signature": "EvABCu0BARFNMg_eNF1EftXhdM43COAjkh990RZRvIBGCmtQ7GP57jQvafhpsSGSD71DQj3y_Jlmv7dpt1P4y8w3dKZxFOGIqotLoVKqucVnwJHiALwwMSIJTvxqgGisBFJ78djySxO6oGhYpzkYLGi-0JSologDZV4kacuiVkrjWLVyYOOrV_2mqVx-vSqIO9VFLnRajNa_U1YKplW4-vxraPXGiAzMkCIqd4wP6PYscL-rQiZC_ke5TrgdXzAF4yV-_tF-emXwa8MUKAikjEPZviJwKRUCOgh5HYwvNnUlgQT7nouxDdC1szVwiWIm0Xvh"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1784823844.961803
+        },
+        {
+          "invocation_id": "e-38390410-11fa-4053-b627-d7d07b70963b",
+          "user_content": {
+            "parts": [
+              {
+                "text": "tell me the weather "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Which city would you like to know the weather for?",
+                "thought_signature": "EsQBCsEBARFNMg9-p3eQ0mpQtu22dGMQf7YifmfIc3pXLQZQoLkAnV6kuVGYUVXj_lVHMrZBdy6YAZlaBpEr71neOzu2JIE0LuQA0Kx3tuin5AVkTriUCofNK22iJ16dWpUv3dtyU1-K3euPrqDCzXQkPZqNKPuunDIA4p1qzCYLoPaSyYPzphExuiuOlsWiFohW6OwyU1s2kGov_tHrDpdHn1B2XoHOoYxaVKnm7DqVcM2c4lDAnJrvlS-Yp_cLstH_WxK56g=="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1784823889.052289
+        },
+        {
+          "invocation_id": "e-1c380b98-6ae5-4da7-b10a-b38fb99b4754",
+          "user_content": {
+            "parts": [
+              {
+                "text": "new york"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The current weather in New York is sunny with a temperature of 25°C (77°F).",
+                "thought_signature": "Eu4BCusBARFNMg-UliOK5u0Bx4XRL0UCyu-zNrS3bcYChg5tiCHEx2yTrCi8HFO0dBb1zNSnBCCe1lvQCR7wyMEe86EenkaVxdHr_2VoFdtJMw9nByrIXOFcIGWb5j_WUkFH6B542gKjvAbeyWsTIzLUEx40-rBgDgCXsp0dBX5cl-QEbDUL1GyGj12_STyrYR20ggBi4AvDLKRvzjSJ8kGFKn9qD1w6Gr0ov9s12Pt6jfXK1x3Y-Xt2A6A6buHnugFmCqpD98l6kO7H4xaBNg4soEjiPVIIal9etPV_YlnDBRZCOXAn1t7IGBwwwAOKQw=="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "weather_time_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "q9uP0sJu",
+                        "args": {
+                          "city": "New York"
+                        },
+                        "name": "get_weather"
+                      },
+                      "thought_signature": "ErMBCrABARFNMg8EegXtclkGrsIjnAMjUIe6aTDSvqTA-Qnn_ds_C9_xhhl0VK26kIgAFNBGiMcvldWZEnP4-lUIooR5bWvaTD4LQu6yV8HjPn0SA1XOpOcnM7ut2kgryMlZ7vvjxIr9o8GS-isUDxUv91xXgQHSPC7jiuuqYiZUWE89z-xNh6WyBzrxHWsO-W-qohCh5CJb0F2wIc-HTzkU714No3HRWgaqAJmegT7owQ1V8MM="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "weather_time_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "q9uP0sJu",
+                        "name": "get_weather",
+                        "response": {
+                          "status": "success",
+                          "report": "The weather in New York is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit)."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1784823894.8921402
+        },
+        {
+          "invocation_id": "e-f6002199-e341-4e5f-9f50-a31b608b4f18",
+          "user_content": {
+            "parts": [
+              {
+                "text": "tell me time and weather of new york"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "In New York:\n\n* **Current Time:** 12:25 PM (EDT)\n* **Weather:** Sunny, 25°C (77°F)",
+                "thought_signature": "EtYCCtMCARFNMg8vt7XBNiN5ktkVK_hdXccOVRZ6KiHDsm-9DWmO8j2lN8kSjSLqbD439QdjWVb7H5COXIDYRGrxaZ3FysDqIU8agE8iyXqd4C2cwun_NAydht4MmXyaGjPGgrz748zeJ7vaASrYzfVbS9QFWYnL0T6ay1vufwuzsRl6gwKOift5fYzWO3E2CcY3ecnW2ZSuJtO0qgyz2ySneV-LgAfpw-gWU9ycW77Eu90y5_tXI6pD2Y-GNYYxvL38nB6ZbZOptTVzrWVVbMGs2lHYhNYebRW9PlvGvuiB9mi0P0sb7tZ0_DOo5YL-WMQDzLvwTg-oQe2Z6dpCGRwfQrMzj6dTzaG0Jjp_5W3ymeya9w5YRECP1dVxWsotEYA9nDOoLQlNcSbR0o34W7KA3hp1tSBXfbYRCooYwoTicvQvEhtL863n_e3QaWa7kEOl6_Q8ssn8"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "weather_time_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "INeOWyag",
+                        "args": {
+                          "city": "New York"
+                        },
+                        "name": "get_current_time"
+                      },
+                      "thought_signature": "EsIDCr8DARFNMg8iCpDEG6jJ3qxs5niIH2rf_un7hRnjZlKJVCjBN9LylGUlTuERq532Zp3IDzN_LyQkQkP6_pc1Pgie-Jo1JddEU1d7C1NeBEM6RIzf7e8kg2wl8Fv7fnuFcKlGHg0-V6puUvU7yiI-zGhMKCcsvrf5JACWsFn8m891-HynB6kC5InyZJcCCjPCoF_P_Epuq1kGGmz2aush8j8J34DQo3mbwlW9d_Gd2J-JAWkOgJfnjIPSrdOUofD8vELCFCvi6ZBdWl1a-OYaMgsEH6vyCakUuLYMt611AppMM3l3b75txPlalzDb3ZmhEuTBV02WXZKX9Fzxel8zXxJK2fYfGuKjxGWayktESMwPeyzGjmzGH47Hm1jhXe_-TFNkTwMUcvKum5F6l03kxF3jYiJSoK54whIpn9KwbhQL3d_vHmdLMfPRdA8H1KqWGaaIEWMosE-5PXh5kaJkNIru9ycjtwXFRAZDAoPzNBtMAIxyAkwA4mqcWuwOsJ4lNjaa-cXM4bX3tvdFY37wt9cK8bR-MckvbDl2rSKRu_z8xhOiHtlQy8067UygQrFUCOi-oMXsplJzhf_4NPrFKPvS"
+                    },
+                    {
+                      "function_call": {
+                        "id": "ekIHmpjM",
+                        "args": {
+                          "city": "New York"
+                        },
+                        "name": "get_weather"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "weather_time_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "INeOWyag",
+                        "name": "get_current_time",
+                        "response": {
+                          "status": "success",
+                          "report": "The current time in New York is 2026-07-23 12:25:33 EDT-0400"
+                        }
+                      }
+                    },
+                    {
+                      "function_response": {
+                        "id": "ekIHmpjM",
+                        "name": "get_weather",
+                        "response": {
+                          "status": "success",
+                          "report": "The weather in New York is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit)."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1784823931.5800178
+        }
+      ],
+      "session_input": {
+        "app_name": "multi_tool_agent",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1784824499.365411
+    }
+  ],
+  "creation_timestamp": 1784824488.150804
+}
