@@ -9,9 +9,9 @@ dotenv.load_dotenv()
 sessions_service_in_memory = InMemorySessionService()
 
 initial_state = {
-    "name": "Mayank",
+    "name": "Rohan",
     "data":'''
-    I am mayank, a software developer with 5 years of experience in full-stack development.
+    I am Rohan, a software developer with 9 ßyears of experience in full-stack development.
     I love NBA, and my favourite player is Kobe Bryant
     '''
 }
