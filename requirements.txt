@@ -1,0 +1,5 @@
+google-adk
+pydantic
+OpenAI
+litellm
+crewai-tools
